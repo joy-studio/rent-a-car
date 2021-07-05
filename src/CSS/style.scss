@@ -142,29 +142,43 @@ $font-size-h2: 48px;
     }
   }
   #projects {
+    .card-style {
+      background-color: white;
+      border-radius: 10px;
+      padding: 10px 10px 10px 20px;
+    }
+    .card-style p:nth-child(2) {
+      color: red;
+    }
+    .card-style p:nth-child(3) {
+      font-weight: bold;
+    }
+    .card-style p:nth-child(4) {
+      font-size: 8px;
+      color: gray;
+    }
     #projects-list {
       display: grid;
       grid-template-rows: 1fr;
       grid-template-columns: 1fr 1fr;
       background-color: #d5fafc;
       background-image: url(../Assets/Images/dots.png);
+      background-size: 100px;
       background-repeat: no-repeat;
-      background-position: 250px 150px;
+      background-position: 230px 100px;
       #projects-list__left {
         display: grid;
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr;
         h2 {
           width: 445px;
-          margin-left: 260px;
-          margin-top: 120px;
+          display: block;
+          margin: 120px 0 0 auto;
         }
         #card-mobile {
           width: 350px;
           height: 436px;
-          border: 1px solid black;
-          margin-left: 350px;
-          margin-top: -250px;
+          margin: -250px 15px 0 auto;
         }
       }
     }
@@ -172,18 +186,15 @@ $font-size-h2: 48px;
       display: grid;
       grid-template-rows: 1fr 1fr;
       grid-template-columns: 1fr;
-      padding-left: 30px;
       #card-site {
         width: 445px;
         height: 340px;
-        border: 1px solid black;
-        margin-top: 168px;
+        margin: 168px 0 0 15px;
       }
       #card-game {
         width: 350px;
         height: 276px;
-        border: 1px solid black;
-        margin-top: 30px;
+        margin: 30px 0 0 15px;
       }
     }
   }
