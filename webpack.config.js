@@ -62,11 +62,21 @@ module.exports = {
       },
       // изображения
       {
-        test: /\.(gif|png|jpg|jpeg|svg)?$/,
-        loader: "file-loader",
-        options: {
-          name: "Assets/Images/[name].[ext]",
-        },
+        // test: /\.(gif|png|jpg|jpeg|svg)?$/,
+        // loader: "file-loader",
+        // options: {
+        //   name: "Assets/Images/[name].[ext]",
+        // },
+        test: /\.(jpe?g|png|gif|svg|ico)$/i,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[ext]",
+              outputPath: "Assets/Images/",
+            },
+          },
+        ],
       },
     ],
   },

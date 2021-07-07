@@ -76,7 +76,7 @@ $font-achivements-item: "Monrope-Medium";
     }
   }
   #navMenu {
-    padding-left: 150px;
+    padding-left: 165px;
     padding-right: auto;
     font-family: $font-nav;
     font-size: ($font-size-nav);
@@ -87,6 +87,7 @@ $font-achivements-item: "Monrope-Medium";
     grid-template-rows: 1fr;
     grid-template-columns: 70% 30%;
     // grid-gap: 2vw;
+    // padding: 0 165px 0px 165px;
     button {
       background-color: blueviolet;
       border: 0;
@@ -96,25 +97,30 @@ $font-achivements-item: "Monrope-Medium";
       font-family: $font-btn;
       font-size: $font-size-btn;
     }
+    #title-left {
+      padding: 165px;
+      width: 100%;
+      background: url(../Assets/Images/title_background_left.png);
+      background-position: left bottom;
+      background-repeat: no-repeat;
+    }
+    #title-right {
+      width: 100%;
+      background: url(../Assets/Images/title_background_right.png);
+      background-position: right center;
+      background-repeat: no-repeat;
+      padding-left: 10%;
+      img {
+        width: 350px;
+      }
+    }
   }
-  #title-left {
-    padding: 150px;
-    width: 100%;
-    background: url(../Assets/Images/title_background_left.png);
-    background-position: left bottom;
-    background-repeat: no-repeat;
-  }
-  #title-right {
-    width: 100%;
-    background: url(../Assets/Images/title_background_right.png);
-    background-position: right center;
-    background-repeat: no-repeat;
-    padding-left: 10%;
-  }
+
   h1 {
     font-family: $font-h1;
     font-size: ($font-size-h1);
     font-weight: 800;
+    width: 730px;
   }
   #container-parthners {
     display: flex;
@@ -260,6 +266,84 @@ $font-achivements-item: "Monrope-Medium";
               font-family: $font-achivements-item;
             }
           }
+        }
+      }
+    }
+  }
+  #web {
+    padding: 90px 0px 0px 165px;
+    #web-container {
+      display: grid;
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr 1fr;
+      #web-left {
+        img {
+        }
+      }
+      #web-right {
+        h2 {
+          margin-top: 198px;
+        }
+        p {
+          color: green;
+          width: 444px;
+        }
+        a {
+          color: red;
+        }
+        a::after {
+          content: " ➝";
+        }
+      }
+    }
+  }
+  #games {
+    #games-container {
+      padding: 90px 0 0 165px;
+      margin-bottom: 56px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+      h2 {
+        width: 540px;
+      }
+      p {
+        width: 540px;
+        font-family: "Monrope-Medium";
+        font-size: 18px;
+      }
+    }
+    img {
+      display: block;
+      margin: 0 auto 90px auto;
+    }
+  }
+  #mobile {
+    #mobile-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+      background-color: #2ec5ce;
+      padding: 0 0 0 165px;
+      #mobile-left {
+        h2 {
+          margin-top: 90px;
+          width: 540px;
+        }
+        p:nth-child(2) {
+          width: 540px;
+        }
+        p:nth-child(3) {
+        }
+        img:nth-child(4) {
+        }
+        img:nth-child(5) {
+        }
+      }
+      #mobile-right {
+        img:nth-child(1) {
+        }
+        img:nth-child(2) {
         }
       }
     }
