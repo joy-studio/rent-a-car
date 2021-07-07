@@ -19,6 +19,9 @@ $font-h1: "Monrope-Bold";
 $font-size-h1: 72px;
 $font-h2: "Monrope-Bold";
 $font-size-h2: 48px;
+$font-btn: "Monrope-Medium";
+$font-size-btn: 20px;
+$font-achivements-item: "Monrope-Medium";
 
 @media (min-width: $extra-extra-large) {
   // body{
@@ -77,12 +80,22 @@ $font-size-h2: 48px;
     padding-right: auto;
     font-family: $font-nav;
     font-size: ($font-size-nav);
+    font-weight: bold;
   }
   #title {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 70% 30%;
     // grid-gap: 2vw;
+    button {
+      background-color: blueviolet;
+      border: 0;
+      border-radius: 10px;
+      width: 196px;
+      height: 62px;
+      font-family: $font-btn;
+      font-size: $font-size-btn;
+    }
   }
   #title-left {
     padding: 150px;
@@ -114,9 +127,11 @@ $font-size-h2: 48px;
     font-family: $font-h2;
     font-size: ($font-size-h2);
     font-weight: 800;
-    text-align: center;
   }
   #about {
+    h2 {
+      text-align: center;
+    }
     p {
       text-align: center;
     }
@@ -195,6 +210,57 @@ $font-size-h2: 48px;
         width: 350px;
         height: 276px;
         margin: 30px 0 0 15px;
+      }
+    }
+  }
+
+  #achievements {
+    #achievements-container {
+      display: grid;
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr 1fr;
+      padding: 90px 165px 0px 165px;
+      #achievements-left {
+        h2 {
+          width: 540px;
+          margin-top: 40px;
+        }
+      }
+      #achievements-right {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        .achievements-item {
+          display: grid;
+          grid-template-rows: 1fr;
+          grid-template-columns: 1fr 1fr;
+          .achievements-item-left {
+            position: relative;
+            img {
+              position: absolute;
+              margin: auto 20px auto auto;
+              top: 0;
+              bottom: 0;
+              right: 0;
+            }
+          }
+
+          .achievements-item-right {
+            p:nth-child(1) {
+              font-weight: bold;
+              font-size: 28px;
+              color: #18191f;
+              margin-top: 10px;
+              font-family: $font-achivements-item;
+            }
+            p:nth-child(2) {
+              font-size: 16px;
+              color: #18191f;
+              margin-top: -25px;
+              font-family: $font-achivements-item;
+            }
+          }
+        }
       }
     }
   }
