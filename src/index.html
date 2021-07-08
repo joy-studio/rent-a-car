@@ -7,319 +7,44 @@
     <title>Document</title>
   </head>
   <body>
-    <!-- Метки разрешения -->
-    <div class="width-label">
-      <p>X-Small до 576</p>
-      <p>Small до 768</p>
-      <p>Medium до 992</p>
-      <p>Large до 1200</p>
-      <p>Extra-Large до 1400</p>
-      <p>Extra-Extra-Large до 1920</p>
-      <p>Больше 1920</p>
-      <p id="ww"></p>
-    </div>
-
-    <section id="menu">
-      <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <div class="container-fluid" id="navMenu">
-            <a class="navbar-brand" href="#"
-              ><img src="Assets/Images/js_logo.svg" alt=""
-            /></a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNavAltMarkup"
-              aria-controls="navbarNavAltMarkup"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav">
-                <a class="nav-link active" aria-current="page" href="#"
-                  >О нас</a
-                >
-                <a class="nav-link" href="#">Продукты</a>
-                <a class="nav-link" href="#">Сайты</a>
-                <a class="nav-link" href="#">Игры</a>
-                <a class="nav-link" href="#">Мобильные приложения</a>
-                <a class="nav-link" href="#">Портфолио</a>
-                <a class="nav-link" href="#">Калькулятор</a>
-                <!-- <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    id="navbarDropdownMenuLink"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Еще
-                  </a>
-                  <ul
-                    class="dropdown-menu"
-                    aria-labelledby="navbarDropdownMenuLink"
-                  >
-                    <li><a class="dropdown-item" href="#">Портфолио</a></li>
-                    <li><a class="dropdown-item" href="#">Калькулятор</a></li>
-                  </ul>
-                </li> -->
-              </div>
-            </div>
-          </div>
-        </nav>
-      </div>
-    </section>
     <header>
-      <div class="container-fluid">
-        <div id="title">
-          <div id="title-left">
-            <h1>
-              Сложные задачи<br />
-              Простые решения
-            </h1>
-            <br />
+      <div class="container-fluid" id="header-container">
+        <div id="header-up">
+          <div id="header-up__left">
+            <img src="Assets/Images/logo.png" alt="" />
+            <p>
+              Автомобили<br />
+              в аренду
+            </p>
+          </div>
+          <div id="header-up__right">
+            <p>8 800 123 00 00</p>
             <button type="button" class="btn btn-primary">
-              Оставить заявку
+              Обратный звонок
             </button>
           </div>
-          <div id="title-right">
-            <img src="Assets/Images/phone_mockup.svg" alt="" />
+        </div>
+        <h1>Автомобили в аренду в Севастополе</h1>
+        <div id="header-down">
+          <div class="header-down__card">
+            <img src="Assets/Images/car_icon.png" alt="" />
+            <h2>01</h2>
+            <p>Всегда чисты авто</p>
+          </div>
+
+          <div class="header-down__card">
+            <img src="Assets/Images/price_icon.png" alt="" />
+            <h2>01</h2>
+            <p>Бесплатная подача по городу Севастополь</p>
+          </div>
+
+          <div class="header-down__card">
+            <img src="Assets/Images/time_icon.png" alt="" />
+            <h2>01</h2>
+            <p>Договор за 5 минут</p>
           </div>
         </div>
       </div>
     </header>
-    <section id="parthners">
-      <div class="container-fluid" id="container-parthners">
-        <img src="Assets/Images/google_logo.png" alt="Google Logo" />
-        <img src="Assets/Images/spaceapp_logo.svg" alt="Google Logo" />
-        <img src="Assets/Images/azure_logo.svg" alt="Google Logo" />
-        <img src="Assets/Images/mailru_logo.svg" alt="Google Logo" />
-      </div>
-    </section>
-    <section id="about">
-      <div class="container-fluid" id="about-container">
-        <h2>Почему мы ?</h2>
-        <p id="about-side__txt">
-          Можно долго писать про то какие мы классные и хорошие, но наши проекты
-          и условия говорят сами за себя.
-        </p>
-        <div id="about-list">
-          <div class="about-card">
-            <img src="Assets/Images/experience.svg" alt="" />
-            <p class="about-card__title">Большой опыт</p>
-            <p class="about-card__text">
-              С 2009 года занимаемся разработкой сайтов, игр и мобильных
-              приложений.
-            </p>
-          </div>
-          <div class="about-card">
-            <img src="Assets/Images/free.svg" alt="" />
-            <p class="about-card__title">Бесплатная консультация</p>
-            <p class="about-card__text">
-              С удовольствием проведем бесплатную консультацию и оценку.
-            </p>
-          </div>
-          <div class="about-card">
-            <img src="Assets/Images/low-price.svg" alt="" />
-            <p class="about-card__title">Низкая стоимость</p>
-            <p class="about-card__text">
-              Мы находимся в Саратове и поэтому наши цены всегда немного ниже
-              рынка.
-            </p>
-          </div>
-          <div class="about-card">
-            <img src="Assets/Images/laughing.svg" alt="" />
-            <p class="about-card__title">Красивые сотрудники</p>
-            <p class="about-card__text">
-              У нас работают красивые сотрудники, если бы не IT то мы бы
-              работали в индустрии мод :-)
-            </p>
-          </div>
-          <div class="about-card">
-            <img src="Assets/Images/management.svg" alt="" />
-            <p class="about-card__title">Прозрачный менеджмент</p>
-            <p class="about-card__text">
-              На любом этапе и в любое время дня и ночи ва шменеджер введет вас
-              в курс дел.
-            </p>
-          </div>
-          <div class="about-card">
-            <img src="Assets/Images/money.svg" alt="" />
-            <p class="about-card__title">Выполняем обязательства</p>
-            <p class="about-card__text">
-              Наш девиз "Мы всегда укладываемся в сметы" и ваш бюджет не
-              изменится в процессе рботы с нами.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="projects">
-      <div class="container-fluid" id="projects-list">
-        <div id="projects-list__left">
-          <h2>Real Stories from Real Customers</h2>
-          <div id="card-mobile" class="card-style">
-            <img src="Assets/Images/google_logo.png" alt="" />
-            <p>
-              To quickly start my startup landing page design, I was looking for
-              a landing page UI Kit. Landify is one of the best landing page UI
-              kit I have come across. It’s so flexible, well organised and
-              easily editable.
-            </p>
-            <p>Floyd Miles</p>
-            <p>Vice President, GoPro</p>
-          </div>
-        </div>
-        <div id="projects-list__right">
-          <div id="card-site" class="card-style">
-            <img src="Assets/Images/google_logo.png" alt="" />
-            <p>
-              To quickly start my startup landing page design, I was looking for
-              a landing page UI Kit. Landify is one of the best landing page UI
-              kit I have come across. It’s so flexible, well organised and
-              easily editable.
-            </p>
-            <p>Floyd Miles</p>
-            <p>Vice President, GoPro</p>
-          </div>
-          <div id="card-game" class="card-style">
-            <img src="Assets/Images/google_logo.png" alt="" />
-            <p>
-              To quickly start my startup landing page design, I was looking for
-              a landing page UI Kit. Landify is one of the best landing page UI
-              kit I have come across. It’s so flexible, well organised and
-              easily editable.
-            </p>
-            <p>Floyd Miles</p>
-            <p>Vice President, GoPro</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="achievements">
-      <div class="container-fluid" id="achievements-container">
-        <div id="achievements-left">
-          <h2>Уже 11 лет мы создаем решения для вас</h2>
-          <p>Наш опыт в цифрах говорит сам за себя</p>
-        </div>
-        <div id="achievements-right">
-          <div class="achievements-item">
-            <div class="achievements-item-left">
-              <img src="Assets/Images/internet.svg" alt="" />
-            </div>
-            <div class="achievements-item-right">
-              <p>127+</p>
-              <p>Сайтов</p>
-            </div>
-          </div>
-          <div class="achievements-item">
-            <div class="achievements-item-left">
-              <img src="Assets/Images/mobile-phone.svg" alt="" />
-            </div>
-            <div class="achievements-item-right">
-              <p>43+</p>
-              <p>Мобильных приложений</p>
-            </div>
-          </div>
-          <div class="achievements-item">
-            <div class="achievements-item-left">
-              <img src="Assets/Images/game-controller.svg" alt="" />
-            </div>
-            <div class="achievements-item-right">
-              <p>50+</p>
-              <p>Игр</p>
-            </div>
-          </div>
-          <div class="achievements-item">
-            <div class="achievements-item-left">
-              <img src="Assets/Images/coding.svg" alt="" />
-            </div>
-            <div class="achievements-item-right">
-              <p>200+</p>
-              <p>Всего проектов</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="web">
-      <div class="container-fluid" id="web-container">
-        <div id="web-left">
-          <img src="Assets/Images/calc.png" alt="" />
-        </div>
-        <div id="web-right">
-          <h2>Рассчет проекта</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Condimentum
-            diam orci pretium a pharetra, feugiat cursus. Dictumst risus, sem
-            egestas odio cras adipiscing vulputate. Nisi, risus in suscipit non.
-            Non commodo volutpat, pharetra, vel.
-          </p>
-          <a href="">Get started</a>
-        </div>
-      </div>
-    </section>
-    <section id="games">
-      <div class="container-fluid">
-        <div id="games-container">
-          <h2>Enter the world of all fashion trends</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venenatis
-            scelerisque at quam congue posuere libero in sit quam. Consequat,
-            scelerisque non tincidunt sit lectus senectus.
-          </p>
-        </div>
-        <img src="Assets/Images/games.png" alt="" />
-      </div>
-    </section>
-    <section id="mobile">
-      <div class="container-fluid" id="mobile-container">
-        <div id="mobile-left">
-          <h2>Manage your projects from your mobile</h2>
-          <p>
-            Download the app to manage your projects, keep track of the progress
-            and complete tasks without procastinating. Stay on track and
-            complete on time!
-          </p>
-          <p>Get the App</p>
-          <img src="Assets/Images/gp_icon.png" alt="" />
-          <img src="Assets/Images/apple_icon.png" alt="" />
-        </div>
-        <div id="mobile-right">
-          <img src="Assets/Images/mobile1.png" alt="" />
-          <img src="Assets/Images/mobile2.png" alt="" />
-        </div>
-      </div>
-    </section>
-    <footer>
-      <div class="container-fluid" id="footer-container">
-        <div id="footer-left">
-          <img src="Assets/Images/about_icon.png" alt="" />
-          <br />
-          <button class="footer-btn">Download Now</button>
-          <button class="footer-btn">License</button>
-          <br />
-          <button class="footer-btn">About</button>
-          <button class="footer-btn">Features</button>
-          <button class="footer-btn">Pricing</button>
-          <button class="footer-btn">Careers</button>
-          <button class="footer-btn">Help</button>
-          <button class="footer-btn">Privacy Policy</button>
-          <p>© 2020 Landify UI Kit. All rights reserved</p>
-        </div>
-        <div id="footer-right">
-          <div>
-            <p>Get the App</p>
-            <img src="Assets/Images/gp_icon.png" alt="" />
-            <br />
-            <img src="Assets/Images/apple_icon.png" alt="" />
-          </div>
-        </div>
-      </div>
-    </footer>
   </body>
 </html>
