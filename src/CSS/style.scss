@@ -31,6 +31,8 @@ $font-achivements-item: "Monrope-Medium";
   header {
     #header-container {
       padding: 35px 375px 0 375px;
+      // padding: 35px 8vw 0 8vw;
+      height: 1184px;
       background: url(../Assets/Images/header_background.png);
       background-repeat: no-repeat;
       -moz-background-size: 100%; /* Firefox 3.6+ */
@@ -81,35 +83,175 @@ $font-achivements-item: "Monrope-Medium";
         color: white;
         font-size: 92px;
         text-align: center;
-        margin: 70px 0 230px 0;
+        margin: 70px 0 240px 0;
       }
+
       #header-down {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr;
-
+        position: relative;
         .header-down__card {
           display: grid;
           background-color: #31cbf9;
-
           border-radius: 10px;
-          width: 370px;
-          height: 320px;
+          margin: 0 auto 0 auto;
+          width: 20vw;
+          height: 20vw;
           img {
             margin: 30px auto 0 auto;
           }
           h2 {
-            font-size: 82px;
+            // font-size: 82px;
+            font-size: 3vw;
             color: white;
             font-weight: bold;
             margin-left: 45px;
           }
           p {
-            font-size: 34px;
+            // font-size: 20px;
+            font-size: 1vw;
             color: white;
             margin-left: 45px;
           }
         }
+      }
+    }
+  }
+  #search {
+    #search-container {
+      padding: 120px 375px 0 375px;
+      h2 {
+        text-align: center;
+        font-size: 82px;
+      }
+      div {
+        margin: 70px 0 120px 0;
+        form {
+          padding: 50px;
+          border-radius: 10px;
+          background-color: #31cbf9;
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          grid-template-rows: 1fr;
+          column-gap: 10px;
+          select {
+            border: 0;
+            border-radius: 10px;
+          }
+          input {
+            border: 0;
+            border-radius: 10px;
+            padding: 10px 20px 10px 20px;
+            font-size: 14px;
+          }
+          input::-webkit-calendar-picker-indicator {
+            // opacity: 0;
+          }
+          button {
+            border: 0;
+            border-radius: 5px;
+            margin: 0 30px 0 30px;
+          }
+        }
+      }
+    }
+  }
+  #cars {
+    #cars-container {
+      padding: 120px 375px 120px 375px;
+      background-color: #31cbf9;
+      select {
+        padding: 10px 20px 10px 20px;
+        border: 0;
+        border-radius: 10px;
+        background-color: #007ee1;
+        color: white;
+      }
+      #filter-buttons {
+        display: flex;
+        justify-content: space-between;
+        margin: 30px 0 0 0;
+        button {
+          background: none;
+          border: 1px solid #007ee1;
+          border-radius: 10 px;
+          color: white;
+          padding: 10px 20px 10px 20px;
+        }
+        button:nth-child(3) {
+          background-color: #007ee1;
+          border: 0;
+          border-radius: 10 px;
+          color: white;
+          padding: 10px 20px 10px 20px;
+        }
+      }
+      #cars-list {
+        margin: 30px 0 0 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        column-gap: 20px;
+        .card {
+          img {
+          }
+          div {
+            display: grid;
+            h5 {
+              font-size: 22px;
+              text-align: center;
+            }
+            p {
+              margin: 20px 0 15px 0;
+              font-weight: bold;
+            }
+            table tr td:nth-child(2) {
+              font-weight: bold;
+            }
+            a {
+              margin: 10px 0 0 0;
+              color: black;
+            }
+            button {
+              background-color: #007ee1;
+              border: 0;
+              border-radius: 10 px;
+              color: white;
+              padding: 10px 20px 10px 20px;
+              margin: 0 60px 0 60px;
+            }
+          }
+        }
+      }
+    }
+  }
+  #info {
+    #info-container {
+      padding: 35px 375px 0 375px;
+      div {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        div {
+          background-color: #31cbf9;
+          display: grid;
+          border-radius: 10px;
+          margin: 0 auto 0 auto;
+          width: 20vw;
+          height: 20vw;
+          img {
+            display: block;
+          }
+          p {
+            display: block;
+            font-size: 1vw;
+            color: white;
+            margin-left: 45px;
+          }
+        }
+      }
+      button {
       }
     }
   }

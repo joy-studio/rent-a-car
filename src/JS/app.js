@@ -9,3 +9,7 @@ import "../Assets/Images/header_background.png";
 import "../Assets/Images/car_icon.png";
 import "../Assets/Images/price_icon.png";
 import "../Assets/Images/time_icon.png";
+import "../Assets/Images/car_card.png";
+import "../Assets/Images/repair.png";
+import "../Assets/Images/fuil.png";
+import "../Assets/Images/gps.png";
