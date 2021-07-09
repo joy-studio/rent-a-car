@@ -16,3 +16,7 @@ import "../Assets/Images/gps.png";
 import "../Assets/Images/visa.png";
 import "../Assets/Images/master.png";
 import "../Assets/Images/mir.png";
+import "../Assets/Images/back.png";
+import "../Assets/Images/clock.png";
+import "../Assets/Images/call.png";
+import "../Assets/Images/hand.png";
