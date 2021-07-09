@@ -229,29 +229,104 @@ $font-achivements-item: "Monrope-Medium";
   #info {
     #info-container {
       padding: 35px 375px 0 375px;
-      div {
+      #info-list {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr;
-        div {
+        margin: 70px 0 0 0;
+        #info-card {
           background-color: #31cbf9;
-          display: grid;
           border-radius: 10px;
-          margin: 0 auto 0 auto;
+          // margin: 0 auto 0 auto;
           width: 20vw;
           height: 20vw;
           img {
             display: block;
+            margin: 50px auto 0 auto;
           }
           p {
-            display: block;
             font-size: 1vw;
             color: white;
-            margin-left: 45px;
+            text-align: center;
+            margin: 30px 0 0 0;
           }
         }
       }
       button {
+        display: block;
+        margin: 70px auto 70px auto;
+        background-color: #007ee1;
+        border: 0;
+        border-radius: 10 px;
+        color: white;
+        padding: 10px 20px 10px 20px;
+      }
+    }
+  }
+  footer {
+    #footer-container {
+      padding: 70px 375px 30px 375px;
+      background-color: #31cbf9;
+      #footer-up {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        #footer-up__left {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: 1fr;
+          img {
+            display: inline-block;
+          }
+          p {
+            display: inline-block;
+            // width: 111px;
+            color: white;
+            font-size: 28px;
+          }
+        }
+        #footer-up__center {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-rows: 1fr;
+          a {
+            display: block;
+            margin: 0 auto 0 auto;
+          }
+        }
+        #footer-up__right {
+          button {
+            display: block;
+            margin: 0 0 0 auto;
+          }
+        }
+      }
+      #footer-middle {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        margin: 30px 0 0 0;
+        #footer-middle__left {
+          img {
+            margin: 0 10px 0 0px;
+          }
+        }
+        #footer-middle__right {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: 1fr;
+          p {
+            color: white;
+            display: block;
+            margin: 0 0 0 auto;
+          }
+        }
+      }
+      #footer-down {
+        p {
+          color: white;
+          text-align: center;
+        }
       }
     }
   }

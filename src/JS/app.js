@@ -13,3 +13,6 @@ import "../Assets/Images/car_card.png";
 import "../Assets/Images/repair.png";
 import "../Assets/Images/fuil.png";
 import "../Assets/Images/gps.png";
+import "../Assets/Images/visa.png";
+import "../Assets/Images/master.png";
+import "../Assets/Images/mir.png";
