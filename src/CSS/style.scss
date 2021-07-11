@@ -146,7 +146,7 @@ p {
       div {
         margin: 70px 0 120px 0;
         form {
-          padding: 50px;
+          padding: 30px;
           border-radius: 10px;
           background-color: #31cbf9;
           display: grid;
@@ -156,9 +156,9 @@ p {
           select {
             border: 0;
             border-radius: 10px;
-            width: 311px;
+            width: 261px;
             height: 63px;
-            padding: 10px;
+            padding-left: 5px;
             -webkit-appearance: none;
             -moz-appearance: none;
             appearance: none;
@@ -172,21 +172,25 @@ p {
             input {
               height: 63px;
               border: 0;
-              padding: 10px 20px 10px 20px;
+              padding-left: 5px;
               font-size: 14px;
             }
             input:nth-child(1) {
               border-radius: 10px 0 0 10px;
+              width: 156px;
             }
             input:nth-child(1)::after {
               content: url(../Assets/Images/date.png);
+              margin-right: 5px;
             }
             input:nth-child(2)::after {
               content: url(../Assets/Images/time.png);
+              margin-right: 5px;
             }
             input:nth-child(2) {
               border-radius: 0 10px 10px 0;
               margin: 0 0 0 -5px;
+              width: 120px;
             }
           }
 
@@ -196,9 +200,10 @@ p {
           button {
             border: 0;
             border-radius: 10px;
-            margin: 0 30px 0 30px;
+            margin: 0 auto 0 auto;
             font-size: 20px;
             font-family: $font-medium;
+            width: 196px;
             height: 63px;
           }
         }
@@ -561,7 +566,7 @@ p {
     }
     #search {
       #search-container {
-        padding: 300px 375px 0 375px;
+        padding: 250px 150px 0 150px;
         h2 {
           text-align: center;
           font-size: 50px;
@@ -570,19 +575,19 @@ p {
         div {
           margin: 70px 0 120px 0;
           form {
-            padding: 50px;
+            padding: 50px 30px;
             border-radius: 10px;
             background-color: #31cbf9;
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
             grid-template-rows: 1fr;
 
             select {
               border: 0;
               border-radius: 10px;
-              width: 311px;
+              width: 271px;
               height: 63px;
-              padding: 10px;
+              padding-left: 5px;
               -webkit-appearance: none;
               -moz-appearance: none;
               appearance: none;
@@ -591,26 +596,30 @@ p {
               background-color: white;
             }
 
-            #date-time {
+            .date-time {
               margin: 0 auto 0 auto;
               input {
                 height: 63px;
                 border: 0;
-                padding: 10px 20px 10px 20px;
+                padding-left: 5px;
                 font-size: 14px;
               }
               input:nth-child(1) {
                 border-radius: 10px 0 0 10px;
+                width: 156px;
               }
               input:nth-child(1)::after {
                 content: url(../Assets/Images/date.png);
+                margin-right: 5px;
               }
               input:nth-child(2)::after {
                 content: url(../Assets/Images/time.png);
+                margin-right: 5px;
               }
               input:nth-child(2) {
                 border-radius: 0 10px 10px 0;
                 margin: 0 0 0 -5px;
+                width: 100px;
               }
             }
 
@@ -620,9 +629,10 @@ p {
             button {
               border: 0;
               border-radius: 10px;
-              margin: 0 30px 0 30px;
+              margin: 0 auto 0 auto;
               font-size: 20px;
               font-family: $font-medium;
+              width: 170px;
               height: 63px;
             }
           }
@@ -983,9 +993,10 @@ p {
       }
     }
   }
+
   #search {
     #search-container {
-      padding: 300px 375px 0 375px;
+      padding: 50px 70px 0 70px;
       h2 {
         text-align: center;
         font-size: 50px;
@@ -994,47 +1005,52 @@ p {
       div {
         margin: 70px 0 120px 0;
         form {
-          padding: 50px;
+          padding: 50px 30px;
           border-radius: 10px;
           background-color: #31cbf9;
           display: grid;
-          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
           grid-template-rows: 1fr;
 
           select {
             border: 0;
             border-radius: 10px;
-            width: 311px;
-            height: 63px;
-            padding: 10px;
+            width: 241px;
+            height: 43px;
+            padding-left: 5px;
             -webkit-appearance: none;
             -moz-appearance: none;
             appearance: none;
             background: url(../Assets/Images/down-arrow.png) no-repeat right;
             background-position-x: 90%;
             background-color: white;
+            font-size: 12px;
           }
 
-          #date-time {
+          .date-time {
             margin: 0 auto 0 auto;
             input {
-              height: 63px;
+              height: 43px;
               border: 0;
-              padding: 10px 20px 10px 20px;
-              font-size: 14px;
+              padding-left: 5px;
+              font-size: 12px;
             }
             input:nth-child(1) {
               border-radius: 10px 0 0 10px;
+              width: 126px;
             }
             input:nth-child(1)::after {
               content: url(../Assets/Images/date.png);
+              margin-right: 5px;
             }
             input:nth-child(2)::after {
               content: url(../Assets/Images/time.png);
+              margin-right: 5px;
             }
             input:nth-child(2) {
               border-radius: 0 10px 10px 0;
               margin: 0 0 0 -5px;
+              width: 100px;
             }
           }
 
@@ -1044,15 +1060,17 @@ p {
           button {
             border: 0;
             border-radius: 10px;
-            margin: 0 30px 0 30px;
-            font-size: 20px;
+            margin: 0 auto 0 auto;
+            font-size: 14px;
             font-family: $font-medium;
-            height: 63px;
+            width: 170px;
+            height: 43px;
           }
         }
       }
     }
   }
+
   #cars {
     #cars-container {
       padding: 120px 70px 120px 70px;
@@ -1409,8 +1427,7 @@ p {
   }
   #search {
     #search-container {
-      margin-top: -150px;
-      padding: 0px 30px 0 30px;
+      padding: 0px 10px 0 10px;
       h2 {
         text-align: center;
         font-size: 50px;
@@ -1419,33 +1436,66 @@ p {
       div {
         margin: 70px 0 120px 0;
         form {
-          padding: 50px;
+          padding: 50px 10px;
           border-radius: 10px;
           background-color: #31cbf9;
           display: grid;
           grid-template-columns: 1fr 1fr 1fr 1fr;
           grid-template-rows: 1fr;
-          column-gap: 10px;
+
           select {
             border: 0;
             border-radius: 10px;
+            width: 211px;
+            height: 43px;
+            padding-left: 5px;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            background: url(../Assets/Images/down-arrow.png) no-repeat right;
+            background-position-x: 90%;
+            background-color: white;
+            font-size: 10px;
           }
-          input {
-            border: 0;
-            border-radius: 10px;
-            padding: 10px 20px 10px 20px;
-            font-size: 14px;
+
+          .date-time {
+            margin: 0 0 0 0;
+            input {
+              height: 43px;
+              border: 0;
+              padding-left: 5px;
+              font-size: 10px;
+            }
+            input:nth-child(1) {
+              border-radius: 10px 0 0 10px;
+              width: 146px;
+            }
+            input:nth-child(1)::after {
+              content: url(../Assets/Images/date.png);
+              margin-right: 5px;
+            }
+            input:nth-child(2)::after {
+              content: url(../Assets/Images/time.png);
+              margin-right: 5px;
+            }
+            input:nth-child(2) {
+              border-radius: 0 10px 10px 0;
+              margin: 0 0 0 -5px;
+              width: 85px;
+            }
           }
+
           input::-webkit-calendar-picker-indicator {
-            // opacity: 0;
+            opacity: 0;
           }
           button {
             border: 0;
             border-radius: 10px;
-            margin: 0 30px 0 30px;
-            font-size: 20px;
+            margin: 0 auto 0 auto;
+            font-size: 12px;
             font-family: $font-medium;
-            height: 63px;
+            width: 120px;
+            height: 43px;
           }
         }
       }
