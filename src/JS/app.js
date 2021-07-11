@@ -20,3 +20,18 @@ import "../Assets/Images/back.png";
 import "../Assets/Images/clock.png";
 import "../Assets/Images/call.png";
 import "../Assets/Images/hand.png";
+import "../Assets/Images/date.png";
+import "../Assets/Images/time.png";
+import "../Assets/Images/down-arrow.png";
+
+let filterButtons = document.querySelectorAll("#filter-buttons button");
+filterButtons.forEach((filterButton) => {
+  filterButton.addEventListener("click", () => {
+    filterButtons.forEach((filterButton) => {
+      filterButton.style.backgroundColor = "#31cbf9";
+      filterButton.style.border = "1px solid #007ee1";
+    });
+    filterButton.style.backgroundColor = "#007ee1";
+    filterButton.style.border = 0;
+  });
+});
