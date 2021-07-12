@@ -35,3 +35,74 @@ filterButtons.forEach((filterButton) => {
     filterButton.style.border = 0;
   });
 });
+
+// document.getElementById("full-card__wrapper").addEventListener("click", () => {
+//   document.getElementById("full-card__wrapper").style.display = "none";
+// });
+
+let getCars = document.querySelectorAll(".get-car");
+getCars.forEach((getCar) => {
+  getCar.addEventListener("click", (e) => {
+    e.preventDefault();
+    document.getElementById("call-back__wrapper").style.display = "block";
+  });
+});
+
+document.getElementById("call-back__wrapper").addEventListener("click", () => {
+  document.getElementById("call-back__wrapper").style.display = "none";
+});
+
+let hideCradElements1 = document.querySelectorAll(".hide-info1");
+let hideCradElements2 = document.querySelectorAll(".hide-info2");
+let hideCradElements3 = document.querySelectorAll(".hide-info");
+
+hideCradElements1.forEach((hideCarElement) => {
+  hideCarElement.style.display = "none";
+});
+hideCradElements2.forEach((hideCarElement) => {
+  hideCarElement.style.display = "none";
+});
+hideCradElements3.forEach((hideCarElement) => {
+  hideCarElement.style.display = "none";
+});
+
+let cardsBody1 = document.getElementsByClassName("card1");
+let cardsBody2 = document.getElementsByClassName("card2");
+let cardsBody3 = document.getElementsByClassName("card3");
+
+let moreLinks = document.querySelectorAll(".more");
+
+moreLinks[0].addEventListener("click", (e) => {
+  e.preventDefault();
+  console.log("1");
+  hideCradElements1.forEach((hideCarElement) => {
+    hideCarElement.style.display = "block";
+  });
+});
+moreLinks[1].addEventListener("click", (e) => {
+  e.preventDefault();
+  console.log("2");
+  hideCradElements2.forEach((hideCarElement) => {
+    hideCarElement.style.display = "block";
+  });
+});
+moreLinks[2].addEventListener("click", (e) => {
+  e.preventDefault();
+  console.log("3");
+  hideCradElements3.forEach((hideCarElement) => {
+    hideCarElement.style.display = "block";
+  });
+});
+
+// moreLinks.forEach((moreLink) => {
+//   moreLink.addEventListener("click", (e) => {
+//     e.preventDefault();
+//     // document.getElementById("full-card__wrapper").style.display = "block";
+//     hideCradElements.forEach((hideCarElement) => {
+//       hideCarElement.style.display = "block";
+//       cardsBody.forEach((cardBody) => {
+//         cardBody.style.height = "865px";
+//       });
+//     });
+//   });
+// });
