@@ -14,7 +14,9 @@ $large: 1200px;
 $extra-large: 1400px;
 $extra-extra-large: 1920px;
 $font-medium: "Monrope-Medium";
-
+.card {
+  margin: 10px 0;
+}
 .container-fluid {
   padding: 0;
 }
@@ -43,6 +45,10 @@ p {
   // right: 10px;
   // cursor: pointer;
   // display: none;
+}
+
+.col-sm-4 {
+  padding: 10px;
 }
 
 @media (min-width: $extra-extra-large) {
@@ -446,17 +452,8 @@ p {
         }
       }
       #cars-list {
-        margin: 30px 0 0 0;
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        // display: grid;
-        // grid-template-columns: 1fr 1fr 1fr;
-        // grid-template-rows: 1fr;
-        column-gap: 20px;
         .card {
-          width: 370px;
-          // height: 865px;
+          max-width: 370px;
           border-radius: 10px;
           img {
           }
@@ -545,7 +542,7 @@ p {
               border-radius: 10px;
               color: white;
               margin: 0 60px 0 60px;
-              width: 229px;
+              max-width: 229px;
               height: 63px;
               font-family: $font-medium;
               font-size: 18px;
@@ -1039,17 +1036,8 @@ p {
           }
         }
         #cars-list {
-          margin: 30px 0 0 0;
-          display: flex;
-          justify-content: space-between;
-          align-items: flex-start;
-          // display: grid;
-          // grid-template-columns: 1fr 1fr 1fr;
-          // grid-template-rows: 1fr;
-          column-gap: 20px;
           .card {
-            width: 370px;
-            // height: 865px;
+            max-width: 370px;
             border-radius: 10px;
             img {
             }
@@ -1138,7 +1126,7 @@ p {
                 border-radius: 10px;
                 color: white;
                 margin: 0 60px 0 60px;
-                width: 229px;
+                max-width: 229px;
                 height: 63px;
                 font-family: $font-medium;
                 font-size: 18px;
@@ -1635,17 +1623,8 @@ p {
         }
       }
       #cars-list {
-        margin: 30px 0 0 0;
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        // display: grid;
-        // grid-template-columns: 1fr 1fr 1fr;
-        // grid-template-rows: 1fr;
-        column-gap: 20px;
         .card {
-          width: 370px;
-          // height: 865px;
+          max-width: 370px;
           border-radius: 10px;
           img {
           }
@@ -1734,7 +1713,7 @@ p {
               border-radius: 10px;
               color: white;
               margin: 0 60px 0 60px;
-              width: 229px;
+              max-width: 229px;
               height: 63px;
               font-family: $font-medium;
               font-size: 18px;
@@ -2230,24 +2209,15 @@ p {
         }
       }
       #cars-list {
-        margin: 30px 0 0 0;
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        // display: grid;
-        // grid-template-columns: 1fr 1fr 1fr;
-        // grid-template-rows: 1fr;
-        column-gap: 20px;
         .card {
-          width: 370px;
-          // height: 865px;
+          max-width: 370px;
           border-radius: 10px;
           img {
           }
           div {
             // display: grid;
             h5 {
-              font-size: 20px;
+              font-size: 22px;
               text-align: center;
               font-family: $font-medium;
             }
@@ -2324,13 +2294,12 @@ p {
               color: black;
             }
             button {
-              display: block;
               background-color: #007ee1;
               border: 0;
               border-radius: 10px;
               color: white;
-              margin: 0 auto 0 auto;
-              width: 200px;
+              margin: 0 60px 0 60px;
+              max-width: 229px;
               height: 63px;
               font-family: $font-medium;
               font-size: 18px;
@@ -2842,25 +2811,16 @@ p {
         }
       }
       #cars-list {
-        margin: 30px 0 0 0;
-        // display: flex;
-        // justify-content: space-between;
-        // align-items: flex-start;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        column-gap: 20px;
         .card {
-          margin: 20px auto 20px auto;
-          width: 500px;
-          // height: 865px;
+          max-width: 370px;
+          // min-width: 300px;
           border-radius: 10px;
           img {
           }
           div {
             // display: grid;
             h5 {
-              font-size: 20px;
+              font-size: 16px;
               text-align: center;
               font-family: $font-medium;
             }
@@ -2888,6 +2848,7 @@ p {
                 margin: 0;
                 display: block;
                 margin: 0 auto 0 0;
+                font-size: 12px;
               }
               p:nth-child(4) {
                 font-weight: bold;
@@ -2937,16 +2898,16 @@ p {
               color: black;
             }
             button {
-              display: block;
               background-color: #007ee1;
+              display: block;
               border: 0;
               border-radius: 10px;
               color: white;
               margin: 0 auto 0 auto;
-              width: 200px;
+              max-width: 1000px;
               height: 63px;
               font-family: $font-medium;
-              font-size: 18px;
+              font-size: 12px;
             }
           }
         }
@@ -3463,25 +3424,17 @@ p {
         }
       }
       #cars-list {
-        margin: 30px 0 0 0;
-        // display: flex;
-        // justify-content: space-between;
-        // align-items: flex-start;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        column-gap: 20px;
         .card {
-          margin: 20px auto 20px auto;
-          width: 500px;
-          // height: 865px;
+          max-width: 370px;
           border-radius: 10px;
+          display: block;
+          margin: 10px auto 10px auto;
           img {
           }
           div {
             // display: grid;
             h5 {
-              font-size: 20px;
+              font-size: 22px;
               text-align: center;
               font-family: $font-medium;
             }
@@ -3558,16 +3511,15 @@ p {
               color: black;
             }
             button {
-              display: block;
               background-color: #007ee1;
               border: 0;
               border-radius: 10px;
               color: white;
-              margin: 0 auto 0 auto;
-              width: 200px;
+              margin: 0 60px 0 60px;
+              max-width: 150px;
               height: 63px;
               font-family: $font-medium;
-              font-size: 18px;
+              font-size: 14px;
             }
           }
         }
@@ -4084,25 +4036,17 @@ p {
         }
       }
       #cars-list {
-        margin: 30px 0 0 0;
-        // display: flex;
-        // justify-content: space-between;
-        // align-items: flex-start;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        column-gap: 20px;
         .card {
-          margin: 20px auto 20px auto;
-          width: 300px;
-          // height: 865px;
+          max-width: 370px;
           border-radius: 10px;
+          display: block;
+          margin: 10px auto 10px auto;
           img {
           }
           div {
             // display: grid;
             h5 {
-              font-size: 20px;
+              font-size: 22px;
               text-align: center;
               font-family: $font-medium;
             }
@@ -4179,16 +4123,15 @@ p {
               color: black;
             }
             button {
-              display: block;
               background-color: #007ee1;
               border: 0;
               border-radius: 10px;
               color: white;
-              margin: 0 auto 0 auto;
-              width: 200px;
+              margin: 0 60px 0 60px;
+              max-width: 150px;
               height: 63px;
               font-family: $font-medium;
-              font-size: 18px;
+              font-size: 14px;
             }
           }
         }
