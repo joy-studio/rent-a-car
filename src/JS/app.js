@@ -71,27 +71,49 @@ let cardsBody2 = document.getElementsByClassName("card2");
 let cardsBody3 = document.getElementsByClassName("card3");
 
 let moreLinks = document.querySelectorAll(".more");
+let openFlag = 0;
 
 moreLinks[0].addEventListener("click", (e) => {
+  e.stopPropagation();
   e.preventDefault();
   console.log("1");
   hideCradElements1.forEach((hideCarElement) => {
     hideCarElement.style.display = "block";
+    openFlag = 1;
   });
 });
 moreLinks[1].addEventListener("click", (e) => {
+  e.stopPropagation();
   e.preventDefault();
   console.log("2");
   hideCradElements2.forEach((hideCarElement) => {
     hideCarElement.style.display = "block";
+    openFlag = 1;
   });
 });
 moreLinks[2].addEventListener("click", (e) => {
+  e.stopPropagation();
   e.preventDefault();
   console.log("3");
   hideCradElements3.forEach((hideCarElement) => {
     hideCarElement.style.display = "block";
+    openFlag = 1;
   });
+});
+
+document.body.addEventListener("click", () => {
+  console.log("qwe");
+  if (openFlag === 1) {
+    hideCradElements1.forEach((hideCarElement) => {
+      hideCarElement.style.display = "none";
+    });
+    hideCradElements2.forEach((hideCarElement) => {
+      hideCarElement.style.display = "none";
+    });
+    hideCradElements3.forEach((hideCarElement) => {
+      hideCarElement.style.display = "none";
+    });
+  }
 });
 
 // moreLinks.forEach((moreLink) => {
@@ -106,3 +128,19 @@ moreLinks[2].addEventListener("click", (e) => {
 //     });
 //   });
 // });
+
+let upButton = document.getElementById("up-button");
+upButton.style.display = "block";
+upButton.style.visibility = "hidden";
+// upButton.style.position = "absolute";
+// upButton.style.top = window.innerHeight - 100 + "px";
+// upButton.style.right = "10px";
+
+window.addEventListener("scroll", function () {
+  console.log(window.scrollY);
+  if (window.scrollY > 800) {
+    upButton.style.visibility = "visible";
+  } else {
+    upButton.style.visibility = "hidden";
+  }
+});
