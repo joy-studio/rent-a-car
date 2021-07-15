@@ -6,6 +6,47 @@
   font-family: "Monrope-Bold";
   src: url(../Assets/Fonts/Manrope/Manrope-ExtraBold.ttf);
 }
+#show-filters::after {
+  content: url(../Assets/Images/down-arrow.png);
+  margin: 0 0 0 10px;
+}
+input[type="date"] {
+  position: relative;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  height: auto;
+  color: transparent;
+  background: transparent;
+}
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-clear-button {
+  z-index: 1;
+}
+
+input[type="time"] {
+  position: relative;
+}
+input[type="time"]::-webkit-calendar-picker-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  height: auto;
+  color: transparent;
+  background: transparent;
+}
+input[type="time"]::-webkit-inner-spin-button,
+input[type="time"]::-webkit-clear-button {
+  z-index: 1;
+}
 
 $x-small: 576px;
 $small: 768px;
@@ -417,7 +458,7 @@ p {
     #cars-container {
       padding: 120px 375px 120px 375px;
       background-color: #31cbf9;
-      select {
+      button {
         padding: 10px 20px 10px 20px;
         border: 0;
         border-radius: 10px;
@@ -545,7 +586,7 @@ p {
               max-width: 229px;
               height: 63px;
               font-family: $font-medium;
-              font-size: 18px;
+              font-size: 16px;
             }
           }
         }
@@ -1001,7 +1042,7 @@ p {
       #cars-container {
         padding: 120px 150px 120px 150px;
         background-color: #31cbf9;
-        select {
+        button {
           padding: 10px 20px 10px 20px;
           border: 0;
           border-radius: 10px;
@@ -1129,7 +1170,7 @@ p {
                 max-width: 229px;
                 height: 63px;
                 font-family: $font-medium;
-                font-size: 18px;
+                font-size: 16px;
               }
             }
           }
@@ -1588,7 +1629,7 @@ p {
     #cars-container {
       padding: 120px 70px 120px 70px;
       background-color: #31cbf9;
-      select {
+      button {
         padding: 10px 20px 10px 20px;
         border: 0;
         border-radius: 10px;
@@ -1716,7 +1757,7 @@ p {
               max-width: 229px;
               height: 63px;
               font-family: $font-medium;
-              font-size: 18px;
+              font-size: 16px;
             }
           }
         }
@@ -2174,7 +2215,7 @@ p {
     #cars-container {
       padding: 120px 50px 120px 50px;
       background-color: #31cbf9;
-      select {
+      button {
         padding: 10px 20px 10px 20px;
         border: 0;
         border-radius: 10px;
@@ -2302,7 +2343,7 @@ p {
               max-width: 229px;
               height: 63px;
               font-family: $font-medium;
-              font-size: 18px;
+              font-size: 16px;
             }
           }
         }
@@ -2775,7 +2816,7 @@ p {
     #cars-container {
       padding: 120px 50px 120px 50px;
       background-color: #31cbf9;
-      select {
+      button {
         padding: 10px 20px 10px 20px;
         border: 0;
         border-radius: 10px;
@@ -3388,23 +3429,29 @@ p {
     #cars-container {
       padding: 120px 50px 120px 50px;
       background-color: #31cbf9;
-      select {
+      button {
         padding: 10px 20px 10px 20px;
         border: 0;
         border-radius: 10px;
         background-color: #007ee1;
         color: white;
-        width: 164px;
+        width: 202px;
         height: 47px;
         font-family: $font-medium;
         font-size: 16px;
+        display: block;
+        margin: 0 auto 0 auto;
       }
       #filter-buttons {
-        display: flex;
-        justify-content: space-between;
-        margin: 40px 0 0 0;
+        // display: flex;
+        // justify-content: space-between;
+        // margin: 40px 0 0 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
         button {
           display: none;
+          margin: 5px auto;
           font-family: $font-medium;
           font-size: 10px;
           width: 202px;
@@ -4000,23 +4047,26 @@ p {
     #cars-container {
       padding: 120px 10px 120px 10px;
       background-color: #31cbf9;
-      select {
+      button {
         padding: 10px 20px 10px 20px;
         border: 0;
         border-radius: 10px;
         background-color: #007ee1;
         color: white;
-        width: 164px;
+        width: 202px;
         height: 47px;
         font-family: $font-medium;
         font-size: 16px;
+        display: block;
+        margin: 0 auto;
       }
       #filter-buttons {
-        display: flex;
-        justify-content: space-between;
-        margin: 40px 0 0 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
         button {
           display: none;
+          margin: 5px auto;
           font-family: $font-medium;
           font-size: 10px;
           width: 202px;

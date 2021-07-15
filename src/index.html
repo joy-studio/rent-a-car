@@ -66,15 +66,15 @@
             <div class="field-div">
               <p class="input-label">Дата получения</p>
               <div class="date-time">
-                <input type="date" />
-                <input type="time" />
+                <input type="date" data-toggle="datetimepicker"/>
+                <input type="time" data-toggle="datetimepicker"/>
               </div>
             </div>
             <div class="field-div">
               <p class="input-label">Дата Возврата</p>
               <div class="date-time">
-                <input type="date" />
-                <input type="time" />
+                <input type="date" data-toggle="datetimepicker"/>
+                <input type="time" data-toggle="datetimepicker"/>
               </div>
             </div>
             <div>
@@ -87,25 +87,23 @@
     </section>
     <section id="cars">
       <div class="container-fluid" id="cars-container">
-        <select>
-          <option>Фильтр</option>
-          <option>Фильтр-2</option>
-          <option>Фильтр-3</option>
-        </select>
+        <button id="show-filters">
+          Фильтр
+          </button>
         <div id="filter-buttons">
-          <button type="button" class="btn btn-primary">
+          <button type="button" class="btn btn-primary" id="filter-button1">
             По возрастанию цены
           </button>
-          <button type="button" class="btn btn-primary">
+          <button type="button" class="btn btn-primary" id="filter-button2">
             По убыванию цены
           </button>
-          <button type="button" class="btn btn-primary">
+          <button type="button" class="btn btn-primary" id="filter-button3">
             Коробка - автомат
           </button>
-          <button type="button" class="btn btn-primary">
+          <button type="button" class="btn btn-primary" id="filter-button4">
             Коробка - механика
           </button>
-          <button type="button" class="btn btn-primary">Без депозита</button>
+          <button type="button" class="btn btn-primary" id="filter-button5">Без депозита</button>
         </div>
         <div id="cars-list">
           <div class="container">
@@ -522,13 +520,13 @@
         <div>
           <p>Дата получения</p>
           <div>
-            <input type="date" name="" id="" />
-            <input type="time" name="" id="" />
+            <input type="date" name="" id="" data-toggle="datetimepicker"/>
+            <input type="time" name="" id="" data-toggle="datetimepicker"/>
           </div>
           <p>Дата получения</p>
           <div>
-            <input type="date" name="" id="" />
-            <input type="time" name="" id="" />
+            <input type="date" name="" id="" data-toggle="datetimepicker"/>
+            <input type="time" name="" id="" data-toggle="datetimepicker"/>
           </div>
         </div>
         <input type="text" placeholder="Ваше имя" />

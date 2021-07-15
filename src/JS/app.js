@@ -25,15 +25,89 @@ import "../Assets/Images/time.png";
 import "../Assets/Images/down-arrow.png";
 
 let filterButtons = document.querySelectorAll("#filter-buttons button");
+
 filterButtons.forEach((filterButton) => {
-  filterButton.addEventListener("click", () => {
+  filterButton.style.display = "none";
+});
+let showHideFilters = 0;
+document.getElementById("show-filters").addEventListener("click", () => {
+  if (showHideFilters === 1) {
     filterButtons.forEach((filterButton) => {
-      filterButton.style.backgroundColor = "#31cbf9";
-      filterButton.style.border = "1px solid #007ee1";
+      filterButton.style.display = "none";
+      showHideFilters = 0;
     });
-    filterButton.style.backgroundColor = "#007ee1";
-    filterButton.style.border = 0;
-  });
+  } else {
+    filterButtons.forEach((filterButton) => {
+      filterButton.style.display = "block";
+      showHideFilters = 1;
+    });
+  }
+});
+
+let selectFilterButton = [0, 0, 0, 0, 0];
+document.getElementById("filter-button1").addEventListener("click", () => {
+  if (selectFilterButton[0] === 0) {
+    document.getElementById("filter-button1").style.backgroundColor = "#007ee1";
+    document.getElementById("filter-button1").style.border = 0;
+    selectFilterButton[0] = 1;
+  } else {
+    document.getElementById("filter-button1").style.backgroundColor = "#31cbf9";
+    document.getElementById("filter-button1").style.border =
+      "1px solid #007ee1";
+    selectFilterButton[0] = 0;
+  }
+});
+
+document.getElementById("filter-button2").addEventListener("click", () => {
+  if (selectFilterButton[1] === 0) {
+    document.getElementById("filter-button2").style.backgroundColor = "#007ee1";
+    document.getElementById("filter-button2").style.border = 0;
+    selectFilterButton[1] = 1;
+  } else {
+    document.getElementById("filter-button2").style.backgroundColor = "#31cbf9";
+    document.getElementById("filter-button2").style.border =
+      "1px solid #007ee1";
+    selectFilterButton[1] = 0;
+  }
+});
+
+document.getElementById("filter-button3").addEventListener("click", () => {
+  if (selectFilterButton[2] === 0) {
+    document.getElementById("filter-button3").style.backgroundColor = "#007ee1";
+    document.getElementById("filter-button3").style.border = 0;
+    selectFilterButton[2] = 1;
+  } else {
+    document.getElementById("filter-button3").style.backgroundColor = "#31cbf9";
+    document.getElementById("filter-button3").style.border =
+      "1px solid #007ee1";
+    selectFilterButton[2] = 0;
+  }
+});
+
+document.getElementById("filter-button4").addEventListener("click", () => {
+  if (selectFilterButton[3] === 0) {
+    document.getElementById("filter-button4").style.backgroundColor = "#007ee1";
+    document.getElementById("filter-button4").style.border = 0;
+    selectFilterButton[3] = 1;
+  } else {
+    document.getElementById("filter-button4").style.backgroundColor = "#31cbf9";
+    document.getElementById("filter-button4").style.border =
+      "1px solid #007ee1";
+    selectFilterButton[3] = 0;
+  }
+});
+
+document.getElementById("filter-button5").addEventListener("click", () => {
+  if (selectFilterButton[4] === 0) {
+    document.getElementById("filter-button5").style.backgroundColor = "#007ee1";
+    document.getElementById("filter-button5").style.border = 0;
+    selectFilterButton[4] = 1;
+  } else {
+    document.getElementById("filter-button5").style.backgroundColor = "#31cbf9";
+    document.getElementById("filter-button5").style.border =
+      "1px solid #007ee1";
+    selectFilterButton[4] = 0;
+  }
 });
 
 let getCars = document.querySelectorAll(".get-car");
@@ -45,9 +119,13 @@ getCars.forEach((getCar) => {
   });
 });
 
-document.getElementById("call-back__wrapper").addEventListener("click", () => {
-  document.getElementById("call-back__wrapper").style.display = "none";
-});
+document
+  .getElementById("call-back__wrapper")
+  .addEventListener("click", (event) => {
+    if (event.target.id === "call-back__wrapper") {
+      document.getElementById("call-back__wrapper").style.display = "none";
+    }
+  });
 
 // let hideCradElements1 = document.querySelectorAll(".hide-info1");
 // let hideCradElements2 = document.querySelectorAll(".hide-info2");
